@@ -4,7 +4,7 @@ import {
   beforeAllHelper,
   testNoConsoleLog,
   testTodosRemoved,
-} from './unit-test-helpers.js';
+} from 'assignment-utils';
 
 describe('checkDoubleDigits', () => {
   const state = {};

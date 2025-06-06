@@ -2,7 +2,7 @@ import {
   beforeAllHelper,
   testNoConsoleLog,
   testTodosRemoved,
-} from './unit-test-helpers.js';
+} from 'assignment-utils';
 
 describe('pokerDiceChain', () => {
   let exInfo;

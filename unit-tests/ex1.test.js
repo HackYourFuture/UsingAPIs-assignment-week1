@@ -3,7 +3,8 @@ import {
   beforeAllHelper,
   testNoConsoleLog,
   testTodosRemoved,
-} from './unit-test-helpers.js';
+  hasCommentedOutCode,
+} from 'assignment-utils';
 
 describe('getAnonName', () => {
   const state = { paramCount: 0 };
@@ -51,6 +52,10 @@ describe('getAnonName', () => {
   testTodosRemoved(() => exInfo.source);
 
   testNoConsoleLog('getAnonName', () => exInfo.rootNode);
+
+  test('should not contain commented out code', () => {
+    expect(hasCommentedOutCode(exInfo.source)).toBeFalsy();
+  });
 
   test('should call `new Promise()`', () => {
     expect(state.newPromise).toBeDefined();

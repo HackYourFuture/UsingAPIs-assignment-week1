@@ -1,6 +1,6 @@
 import { simple } from 'acorn-walk';
 
-import { beforeAllHelper, testTodosRemoved } from './unit-test-helpers.js';
+import { beforeAllHelper, testTodosRemoved } from 'assignment-utils';
 
 describe('rollDie', () => {
   const state = {};
