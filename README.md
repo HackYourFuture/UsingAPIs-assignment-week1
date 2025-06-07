@@ -1,5 +1,11 @@
 # Assignment: Using APIs - Week 1
 
+## General Introduction
+
+General instructions how to setup your computer and work on the assigments can be found here:
+
+- [Setup Instructions for HackYourFuture Assignments](https://github.com/HackYourFuture/assignment-utils/blob/main/assignment-docs/SETUP.md)
+
 ## Setup
 
 After cloning this repository to your local computer, install the dependencies with the following command:
@@ -11,8 +17,6 @@ npm install
 ## Exercises
 
 The assignment for this week can be found in the `assignment` folder.
-
-### Running the Exercises
 
 To run the exercises in Node.js, `cd` into the `assignment` folder and use the following command:
 
@@ -26,7 +30,7 @@ For example, to run the first exercise, use:
 node ex1.js
 ```
 
-> Tip: You can use autocompletion in your terminal to quickly find the exercise files. Start typing `ex` and then press the Tab key to see the available options.
+> Tip: You can use autocompletion in your terminal to quickly find the exercise files. Start typing `node ex1` and then press the Tab key to let the terminal complete the file name with `.js` for you.
 
 ### Running Unit Tests
 
