@@ -50,6 +50,12 @@ The unit tests will check if your implementation meets the requirements specifie
 
 These same unit tests will be used to evaluate your submission, so make sure they pass before submitting your assignment.
 
+## Submission
+
+- The latest version of the `main` branch is the final version of your assignment solution.
+- You may commit and push code as many times as you want.
+- You may use extra branches if you want. But don't forget to merge them to `main`.
+
 The individual exercises will be described in the sections below.
 
 ### Exercise 1: John who?
