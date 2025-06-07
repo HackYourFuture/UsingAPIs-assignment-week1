@@ -1,8 +1,52 @@
 # Assignment: Using APIs - Week 1
 
+## Setup
+
+After cloning this repository to your local computer, install the dependencies with the following command:
+
+```bash
+npm install
+```
+
 ## Exercises
 
 The assignment for this week can be found in the `assignment` folder.
+
+### Running the Exercises
+
+To run the exercises in Node.js, `cd` into the `assignment` folder and use the following command:
+
+```bash
+node <exercise-file-name>.js
+```
+
+For example, to run the first exercise, use:
+
+```bash
+node ex1.js
+```
+
+> Tip: You can use autocompletion in your terminal to quickly find the exercise files. Start typing `ex` and then press the Tab key to see the available options.
+
+### Running Unit Tests
+
+To ensure your code works as expected, we have provided unit tests for each exercise. You can run these tests using [Jest](https://jestjs.io/), which is already set up in the project.
+
+```bash
+npx jest <exercise-file-name>
+```
+
+For example, to run the unit test for the first exercise, use:
+
+```bash
+npx jest ex1
+```
+
+The unit tests will check if your implementation meets the requirements specified in the exercise description. If all tests pass, you can be confident that your solution is functionally correct.
+
+These same unit tests will be used to evaluate your submission, so make sure they pass before submitting your assignment.
+
+The individual exercises will be described in the sections below.
 
 ### Exercise 1: John who?
 

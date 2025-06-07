@@ -137,3 +137,4 @@ dist
 
 # Solution files (for testing unit tests)
 solutions/
+toggle-folders.sh

@@ -4,6 +4,7 @@ import {
   beforeAllHelper,
   testNoConsoleLog,
   testTodosRemoved,
+  hasCommentedOutCode,
 } from 'assignment-utils';
 
 describe('checkDoubleDigits', () => {
@@ -41,6 +42,10 @@ describe('checkDoubleDigits', () => {
   testTodosRemoved(() => exInfo.source);
 
   testNoConsoleLog('checkDoubleDigits', () => exInfo.rootNode);
+
+  test('should not contain commented-out code', () => {
+    expect(hasCommentedOutCode(exInfo.source)).toBeFalsy();
+  });
 
   test('should call new Promise()', () => {
     expect(state.newPromise).toBeDefined();

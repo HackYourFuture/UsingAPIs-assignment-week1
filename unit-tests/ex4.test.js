@@ -4,6 +4,7 @@ import {
   beforeAllHelper,
   testNoConsoleLog,
   testTodosRemoved,
+  hasCommentedOutCode,
 } from 'assignment-utils';
 
 describe('pokerDiceAll', () => {
@@ -11,10 +12,12 @@ describe('pokerDiceAll', () => {
 
   let exInfo;
   let rollDice;
+  let explanation;
 
   beforeAll(async () => {
     exInfo = await beforeAllHelper(__filename);
     rollDice = exInfo.module?.rollDice;
+    explanation = exInfo.module?.explanation;
 
     exInfo.rootNode &&
       simple(exInfo.rootNode, {
@@ -37,6 +40,10 @@ describe('pokerDiceAll', () => {
   testTodosRemoved(() => exInfo.source);
 
   testNoConsoleLog('rollDice', () => exInfo.rootNode);
+
+  test('should not contain commented-out code', () => {
+    expect(hasCommentedOutCode(exInfo.source)).toBeFalsy();
+  });
 
   test('should use `dice.map()`', () => {
     expect(state.diceMap).toBeDefined();
@@ -84,5 +91,10 @@ describe('pokerDiceAll', () => {
     } finally {
       randomSpy.mockRestore();
     }
+  });
+
+  test('explanation placeholder should be replaced', () => {
+    expect(explanation).toBeDefined();
+    expect(explanation).not.toContain('placeholder with your explanation');
   });
 });

@@ -6,4 +6,5 @@ export default {
   modulePathIgnorePatterns: ['__testUtils__'],
   transformIgnorePatterns: [],
   sandboxInjectedGlobals: ['Math'],
+  noStackTrace: true,
 };

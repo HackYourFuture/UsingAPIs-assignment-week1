@@ -53,7 +53,7 @@ describe('getAnonName', () => {
 
   testNoConsoleLog('getAnonName', () => exInfo.rootNode);
 
-  test('should not contain commented out code', () => {
+  test('should not contain commented-out code', () => {
     expect(hasCommentedOutCode(exInfo.source)).toBeFalsy();
   });
 

@@ -59,4 +59,7 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 
-// TODO Replace this comment by your explanation that was asked for in the assignment description.
+// TODO Update the explanation below
+export const explanation = `
+Replace this placeholder with your explanation of why the problem described in the assignment no longer occurs after refactoring the code to use promises instead of callbacks.
+`;

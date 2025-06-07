@@ -43,4 +43,7 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 
-// TODO Replace this comment by your explanation that was asked for in the assignment description.
+// TODO Update the explanation below
+export const explanation = `
+Replace this placeholder with your explanation of why, in the case of a rejected promise, dice that have not yet finished their roll continue to do so.
+`;

@@ -1,5 +1,6 @@
 import {
   beforeAllHelper,
+  hasCommentedOutCode,
   testNoConsoleLog,
   testTodosRemoved,
 } from 'assignment-utils';
@@ -20,6 +21,10 @@ describe('pokerDiceChain', () => {
   testTodosRemoved(() => exInfo.source);
 
   testNoConsoleLog('rollDice', () => exInfo.rootNode);
+
+  test('should not contain commented-out code', () => {
+    expect(hasCommentedOutCode(exInfo.source)).toBeFalsy();
+  });
 
   test('should resolve when all dice settle successfully', async () => {
     expect.assertions(4);
