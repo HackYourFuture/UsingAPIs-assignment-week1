@@ -46,6 +46,18 @@ For example, to run the unit test for the first exercise, use:
 npx jest ex1
 ```
 
+To run all unit tests at once, you can simply use:
+
+```bash
+npx jest
+```
+
+Or, alternatively, to run all tests you can use the `npm` command:
+
+```bash
+npm test
+```
+
 The unit tests will check if your implementation meets the requirements specified in the exercise description. If all tests pass, you can be confident that your solution is functionally correct.
 
 These same unit tests will be used to evaluate your submission, so make sure they pass before submitting your assignment.
