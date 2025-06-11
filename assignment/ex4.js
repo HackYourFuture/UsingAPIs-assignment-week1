@@ -1,4 +1,4 @@
-// Instructions: https://github.com/HackYourFuture/UsingAPIs-assignment-week1/README.md#instructions-ex4
+// Instructions: https://github.com/HackYourFuture/UsingAPIs-assignment-week1#instructions---ex4
 
 // The line below makes the rollDie() function available to this file.
 // Do not change or remove it.

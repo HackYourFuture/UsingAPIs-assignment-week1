@@ -1,4 +1,4 @@
-// Instructions: hhttps://github.com/HackYourFuture/UsingAPIs-assignment-week1#exercise-5-throw-dice-sequentially
+// Instructions: https://github.com/HackYourFuture/UsingAPIs-assignment-week1#exercise-5-throw-dice-sequentially
 
 // The line below makes the rollDie() function available to this file.
 // Do not change or remove it.
