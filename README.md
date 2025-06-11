@@ -2,7 +2,7 @@
 
 ## General Introduction
 
-General instructions how to setup your computer and work on the assigments can be found here:
+General instructions how to setup your computer and work on the assignments can be found here:
 
 - [Setup Instructions for HackYourFuture Assignments](https://github.com/HackYourFuture/assignment-utils/blob/main/assignment-docs/SETUP.md)
 
@@ -205,11 +205,13 @@ Oops... Die rolled off the table
 
 Since we want to practice with promises anyway, let's see what happens when we refactor the code to use promises:
 
+#### Instructions - ex3
+
 - Run the unmodified program and confirm that the problem as described can be reproduced.
-- Refactor the `rollDie()` function from using a callback to returning a promise.
-- Change the calls to `callback()` to calls to `resolve()` and `reject()`.
-- Refactor the code that calls `rollDie()` to use the returned promise.
-- Does the problem described above still occur? If not, what would be your explanation? Add your answer as a comment to be bottom of the file.
+- **TODO#1**: Refactor the `rollDie()` function from using a callback to returning a promise.
+- **TODO#2**, **TODO#3**: Change the calls to `callback()` to calls to `resolve()` and `reject()`.
+- **TODO#4**: Refactor the code that calls `rollDie()` to use the returned promise.
+- **TODO#5**: Does the problem described above still occur? If not, what would be your explanation? Replace the placeholder text with your explanation.
 
 ### Exercise 4: Throw the dice for a Poker Dice game
 
@@ -223,9 +225,11 @@ Dice in a [Poker Dice](https://en.wikipedia.org/wiki/Poker_dice) game have repre
 
 In this exercise we have provided a ready-made `rollDie()` function for you that takes a die number (1-5) as an argument and returns a promise that resolves to its final value, or a rejected promise with an `Error` object if the die rolled off the table. The `rollDie()` function is located in a separate file (`pokerDiceRoller.js`). For this exercise you do not need to look at it, although you are welcome to do so. The only thing you need to know is that it returns a promise, as described above.
 
-We have also provided some code that demonstrates how to handle throwing a single die. For this exercise you should do the following:
+We have also provided some code that demonstrates how to handle throwing a single die. For this exercise you should do the following.
 
-- Refactor the `rollDice()` function to throw five dice in one go, by using `.map()` on the `dice` array to create an array of promises for use with `Promise.all()`.
+#### Instructions - ex4
+
+- **TODO#1**: Refactor the `rollDice()` function to throw five dice in one go, by using `.map()` on the `dice` array to create an array of promises for use with `Promise.all()`.
 - A successful (i.e. resolved) throw should output a message similar to:
 
   ```text
@@ -254,7 +258,7 @@ The provided `rollDie()` function logs the value of a die as it rolls, time-stam
 ...
 ```
 
-You may also notice that, in the case of a rejected promise, dice that have not yet finished their roll continue to do so. Can you explain why? Please add your answer as a comment to the end of the exercise file.
+**TODO#2**: You may also notice that, in the case of a rejected promise, dice that have not yet finished their roll continue to do so. Can you explain why? Please replace the placeholder text in the code with your explanation.
 
 ### Exercise 5: Throw dice sequentially
 
@@ -262,4 +266,4 @@ You may also notice that, in the case of a rejected promise, dice that have not 
 
 In the previous exercise we used `Promise.all()` to throw five dice in one go. In the current exercise we will be throwing five dice one at a time, waiting for a die to settle before throwing the next one. Of course, we still consider a die rolling off the table to be a showstopper.
 
-To throw the dice sequentially we will be using a _promise chain_. Your job is to expand the given promise chain to include five dice.
+**TODO#1**: To throw the dice sequentially we will be using a _promise chain_. Your job is to expand the given promise chain to include five dice.

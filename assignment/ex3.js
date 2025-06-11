@@ -1,16 +1,6 @@
-/*------------------------------------------------------------------------------
-Full description at: https://github.com/HackYourFuture/Assignments/tree/main/3-UsingAPIs/Week1#exercise-3-roll-a-die
+// Instructions: https://github.com/HackYourFuture/UsingAPIs-assignment-week1/README.md#instructions-ex3
 
-- Run the unmodified program and confirm that problem described occurs.
-- Refactor the `rollDie()` function from callback-based to returning a
-  promise.
-- Change the calls to `callback()` to calls to `resolve()` and `reject()`.
-- Refactor the code that call `rollDie()` to use the promise it returns.
-- Does the problem described above still occur? If not, what would be your
-  explanation? Add your answer as a comment to be bottom of the file.
-------------------------------------------------------------------------------*/
-
-// TODO Remove callback and return a promise
+// TODO#1
 export function rollDie(callback) {
   // Compute a random number of rolls (3-10) that the die MUST complete
   const randomRollsToDo = Math.floor(Math.random() * 8) + 3;
@@ -23,13 +13,13 @@ export function rollDie(callback) {
 
     // Use callback to notify that the die rolled off the table after 6 rolls
     if (roll > 6) {
-      // TODO replace "error" callback
+      // TODO#2
       callback(new Error('Oops... Die rolled off the table.'));
     }
 
     // Use callback to communicate the final die value once finished rolling
     if (roll === randomRollsToDo) {
-      // TODO replace "success" callback
+      // TODO#3
       callback(null, value);
     }
 
@@ -44,7 +34,7 @@ export function rollDie(callback) {
 }
 
 function main() {
-  // TODO Refactor to use promise
+  // TODO#4
   rollDie((error, value) => {
     if (error !== null) {
       console.log(error.message);
@@ -59,7 +49,7 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 
-// TODO Update the explanation below
+// TODO#5
 export const explanation = `
 Replace this placeholder with your explanation of why the problem described in the assignment no longer occurs after refactoring the code to use promises instead of callbacks.
 `;
