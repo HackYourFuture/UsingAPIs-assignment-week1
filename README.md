@@ -205,7 +205,7 @@ Oops... Die rolled off the table
 
 Since we want to practice with promises anyway, let's see what happens when we refactor the code to use promises:
 
-#### Instructions - ex3
+#### Instructions ex3
 
 - Run the unmodified program and confirm that the problem as described can be reproduced.
 - **TODO#1**: Refactor the `rollDie()` function from using a callback to returning a promise.
@@ -227,7 +227,7 @@ In this exercise we have provided a ready-made `rollDie()` function for you that
 
 We have also provided some code that demonstrates how to handle throwing a single die. For this exercise you should do the following.
 
-#### Instructions - ex4
+#### Instructions ex4
 
 - **TODO#1**: Refactor the `rollDice()` function to throw five dice in one go, by using `.map()` on the `dice` array to create an array of promises for use with `Promise.all()`.
 - A successful (i.e. resolved) throw should output a message similar to:

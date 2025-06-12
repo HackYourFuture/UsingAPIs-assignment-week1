@@ -1,4 +1,4 @@
-// Instructions: https://github.com/HackYourFuture/UsingAPIs-assignment-week1#instructions---ex3
+// Instructions: https://github.com/HackYourFuture/UsingAPIs-assignment-week1#instructions-ex3
 
 // TODO#1
 export function rollDie(callback) {
